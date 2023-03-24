@@ -1,8 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
-import 'package:test_firebase/page/score_screen.dart';
 
 class QuestionController extends GetxController
     with SingleGetTickerProviderMixin {
