@@ -53,7 +53,6 @@ class _AddQuestionState extends State<AddQuestion> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF454545),
-      //backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text(
           'Ajouter une question',
@@ -82,7 +81,9 @@ class _AddQuestionState extends State<AddQuestion> {
                       style: const TextStyle(color: Colors.white, fontSize: 25),
                       decoration: const InputDecoration(
                         hintText: "Question",
-                        hintStyle: TextStyle(color: Color.fromARGB(127, 255, 255, 255), fontSize: 25),
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(127, 255, 255, 255),
+                            fontSize: 25),
                       ),
                       onChanged: (val) {
                         question = val;
@@ -96,7 +97,8 @@ class _AddQuestionState extends State<AddQuestion> {
                       style: const TextStyle(color: Colors.white, fontSize: 25),
                       decoration: const InputDecoration(
                         hintText: "Option1 (Correct Answer)",
-                        hintStyle: TextStyle(color: Color.fromARGB(127, 255, 255, 255)),
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(127, 255, 255, 255)),
                       ),
                       onChanged: (val) {
                         option1 = val;
@@ -110,7 +112,8 @@ class _AddQuestionState extends State<AddQuestion> {
                       style: const TextStyle(color: Colors.white, fontSize: 25),
                       decoration: const InputDecoration(
                         hintText: "Option2",
-                        hintStyle: TextStyle(color: Color.fromARGB(127, 255, 255, 255)),
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(127, 255, 255, 255)),
                       ),
                       onChanged: (val) {
                         option2 = val;
@@ -124,7 +127,8 @@ class _AddQuestionState extends State<AddQuestion> {
                       style: const TextStyle(color: Colors.white, fontSize: 25),
                       decoration: const InputDecoration(
                         hintText: "Option3",
-                        hintStyle: TextStyle(color: Color.fromARGB(127, 255, 255, 255)),
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(127, 255, 255, 255)),
                       ),
                       onChanged: (val) {
                         option3 = val;
@@ -138,7 +142,8 @@ class _AddQuestionState extends State<AddQuestion> {
                       style: const TextStyle(color: Colors.white, fontSize: 25),
                       decoration: const InputDecoration(
                         hintText: "Option4",
-                        hintStyle: TextStyle(color: Color.fromARGB(127, 255, 255, 255)),
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(127, 255, 255, 255)),
                       ),
                       onChanged: (val) {
                         option4 = val;
@@ -147,7 +152,6 @@ class _AddQuestionState extends State<AddQuestion> {
                     const SizedBox(
                       height: 8,
                     ),
-                    //Spacer(),
                     Row(
                       children: [
                         GestureDetector(

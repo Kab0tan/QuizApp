@@ -64,7 +64,6 @@ class _QuestioncardState extends State<Questioncard> {
             child: Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
               child: Text(
-                //widget.question,
                 widget.questionModel.question, //affichage de la question
                 textAlign: TextAlign.center,
                 style: const TextStyle(
@@ -204,7 +203,6 @@ class _QuestionTileState extends State<QuestionTile> {
               child: Align(
                 alignment: AlignmentDirectional(0, 0),
                 child: AutoSizeText(
-                  //widget.option4,
                   widget.opt,
                   textAlign: TextAlign.center,
                   style: TextStyle(

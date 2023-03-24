@@ -15,7 +15,6 @@ class PlayQuiz extends StatefulWidget {
 
 
 class _PlayQuizState extends State<PlayQuiz> {
-  // PageController _questionController = Get.put(PageController());
   PageController _questionController = PageController();
 
   //defining which database i call with widget.quizID and store the db in the variable "ref"

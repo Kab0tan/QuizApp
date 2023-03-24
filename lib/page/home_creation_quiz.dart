@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_firebase/page/create_quiz.dart';
 
-
 class PageMenuCreationQUizWidget extends StatefulWidget {
   const PageMenuCreationQUizWidget({Key? key}) : super(key: key);
 
@@ -24,11 +23,11 @@ class _PageMenuCreationQUizWidgetState
         title: const Text(
           'Page création de quiz',
           style: TextStyle(
-                fontFamily: 'Montserrat',
-                color: Colors.white,
-                fontSize: 22,
-                fontWeight: FontWeight.w800,
-              ),
+            fontFamily: 'Montserrat',
+            color: Colors.white,
+            fontSize: 22,
+            fontWeight: FontWeight.w800,
+          ),
         ),
         actions: [],
         centerTitle: false,
@@ -57,11 +56,11 @@ class _PageMenuCreationQUizWidgetState
                     child: const Text(
                       'Créer Quiz',
                       style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 28,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        fontFamily: 'Montserrat',
+                        fontSize: 28,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -69,56 +68,48 @@ class _PageMenuCreationQUizWidgetState
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 100, 0, 0),
                 child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
-                      onPrimary: Colors.black,
-                      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
-                      textStyle:
-                        const TextStyle(
-                          fontSize: 30, 
-                          fontWeight: FontWeight.bold,
-                          ),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                      shadowColor: Colors.black,
-                      elevation:10,
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Colors.black,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 60, vertical: 30),
+                    textStyle: const TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
                     ),
-                    onPressed: () {},
-                    child: const Text('Importer Excel'),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(40)),
+                    shadowColor: Colors.black,
+                    elevation: 10,
                   ),
+                  onPressed: () {},
+                  child: const Text('Importer Excel'),
+                ),
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
-                child: 
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
-                      onPrimary: Colors.black,
-                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
-                      textStyle:
-                        const TextStyle(
-                          fontSize: 30, 
-                          fontWeight: FontWeight.bold,
-                          ),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                      shadowColor: Colors.black,
-                      elevation:10,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Colors.black,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 40, vertical: 30),
+                    textStyle: const TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
                     ),
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => CreateQuiz() )
-          );
-                    },/*async {
-                            await Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>
-                                    PageQuizPersonnaliseWidget(),
-                              ),
-                            );
-                          },*/
-                    child: const Text('Quiz Personnalisé'),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(40)),
+                    shadowColor: Colors.black,
+                    elevation: 10,
                   ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => CreateQuiz()));
+                  },
+                  child: const Text('Quiz Personnalisé'),
                 ),
-              
+              ),
             ],
           ),
         ),

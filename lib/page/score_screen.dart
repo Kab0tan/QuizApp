@@ -44,7 +44,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                     MaterialPageRoute(builder: (context) => Home()),
                   );
                 },
-                child: Text('Go to Menu',style: TextStyle(fontSize: 20),),
+                child: const Text('Go to Menu',style: TextStyle(fontSize: 20),),
               ),
               Spacer(),
             ],

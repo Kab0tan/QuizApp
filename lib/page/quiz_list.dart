@@ -68,78 +68,7 @@ class _QuizListState extends State<QuizList> {
                                 ),
                               ),
                             ),
-                            /*Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 10, 0),
-                                    child: ElevatedButton(
-                                      onPressed: () => showDialog<String>(
-                                        context: context,
-                                        builder: (BuildContext context) => AlertDialog(
-                                          title: const Text('Supprimer quiz ?',style: TextStyle(fontFamily: 'Montserrat',fontWeight: FontWeight.w700)),
-                                          content: const Text('Voulez-vous supprimer le quiz entier?'),
-                                          actions: <Widget>[
-                                            TextButton(
-                                              onPressed: () => Navigator.pop(context, 'Non'),
-                                              child: const Text('Non', style: TextStyle(color: Colors.red)),
-                                            ),
-                                            TextButton(
-                                              onPressed: 
-                                              () => [Navigator.pop(context, 'Oui'), ref.doc(snapshot.data!.docs[index]['quizID']).delete().then((_) => print('Deleted')).catchError((error) => print('Delete failed: $error'))],
-                                              child: const Text('Oui'),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-      
-                                      child: Icon(Icons.delete, color: Colors.white, size: 35),
-                                      style: ElevatedButton.styleFrom(
-                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                          padding: EdgeInsets.all(5),
-                                          primary: Colors.red, // <-- Button color
-                                           // <-- Splash color
-                                        ),
-                                      ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 10, 0),
-                                    child: ElevatedButton(
-                                      onPressed: () async {
-                                        
-                                      },
-                                      child: Icon(Icons.list_alt_rounded, color: Colors.white, size: 35),
-                                      style: ElevatedButton.styleFrom(
-                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                          padding: EdgeInsets.all(5),
-                                          primary: Colors.blue, // <-- Button color
-                                          onPrimary: Colors.red, // <-- Splash color
-                                        ),
-                                      ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 10, 0),
-                                    child: ElevatedButton(
-                                      onPressed: () async {
-                                        //print(snapshot.data!.docs[index]);
-                                        await Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) => QuestionList(
-                                                snapshot.data!.docs[index]['quizID']),
-                                          ),
-                                        );
-                                      },
-                                      child: Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 35),
-                                      style: ElevatedButton.styleFrom(
-                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                          padding: EdgeInsets.all(5),
-                                          primary: Colors.blue, // <-- Button color
-                                          onPrimary: Colors.red, // <-- Splash color
-                                        ),
-                                      ),
-                                  ),
-                                  */
+                            
 
                             Flexible(
                               child: GridView.count(
