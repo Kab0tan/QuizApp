@@ -1,6 +1,10 @@
 # QuizApp 
 
-A new Flutter project.
+Personal Flutter project. 
+
+App Quiz to create personalized quiz and questions, and test them.
+
+WIP
 
 ## Getting Started
 
