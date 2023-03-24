@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:test_firebase/page/home.dart';
-import 'package:test_firebase/page/quiz_list.dart';
-import 'package:test_firebase/page/quiz_play.dart';
 
 class ScoreScreen extends StatefulWidget {
   final int length_, total;

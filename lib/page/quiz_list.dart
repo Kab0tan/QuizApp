@@ -1,12 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
 import 'package:test_firebase/page/quiz_play.dart';
-import 'package:test_firebase/page/create_quiz.dart';
-import 'package:test_firebase/page/home_creation_quiz.dart';
 import 'package:test_firebase/page/question_list.dart';
-import 'package:test_firebase/services/database.dart';
 
 class QuizList extends StatefulWidget {
   @override

@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:test_firebase/services/model_question.dart';
 import 'package:test_firebase/services/question_card.dart';
 
