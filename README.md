@@ -1,4 +1,4 @@
-# test_firebase
+# QuizApp 
 
 A new Flutter project.
 
