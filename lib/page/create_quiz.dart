@@ -128,7 +128,6 @@ class _CreateQuizState extends State<CreateQuiz> {
                     color: Color(0xFFEEEEEE),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  //alignment: AlignmentDirectional(0, 0),
                   child: Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
                     child: TextFormField(

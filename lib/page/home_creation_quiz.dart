@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_firebase/page/create_quiz.dart';
+import 'package:test_firebase/services/excel_read.dart';
 
 class PageMenuCreationQUizWidget extends StatefulWidget {
   const PageMenuCreationQUizWidget({Key? key}) : super(key: key);
@@ -82,7 +83,9 @@ class _PageMenuCreationQUizWidgetState
                     shadowColor: Colors.black,
                     elevation: 10,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    readExcelFile();
+                  },
                   child: const Text('Importer Excel'),
                 ),
               ),
